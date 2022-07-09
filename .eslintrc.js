@@ -9,7 +9,16 @@ module.exports = {
     'plugin:prettier/recommended',
     'prettier', // 우선 순위 1
   ],
+  globals: {
+    context: 'readonly',
+  },
   parser: '@typescript-eslint/parser',
+  env: {
+    browser: true,
+    es2021: true,
+    node: true,
+    jest: true,
+  },
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -64,6 +73,16 @@ module.exports = {
       },
     ],
     'import/newline-after-import': ['error', { count: 1 }],
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
 
     // react
     'react/jsx-filename-extension': [

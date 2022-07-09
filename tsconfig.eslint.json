@@ -8,6 +8,10 @@
     // add all files in which you see
     // the "parserOptions.project" error
     ".eslintrc.js",
-    "lint-staged.config.js"
+    "lint-staged.config.js",
+    "jest.config.ts",
+    "jest.setup.ts",
+    ".babelrc",
+    "next-env.d.ts"
   ]
 }

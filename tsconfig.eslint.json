@@ -4,9 +4,10 @@
   "include": [
     // 👇️ add all the directories and files
     // that you want to lint here
-    "src",
+    "pages",
     // add all files in which you see
     // the "parserOptions.project" error
-    ".eslintrc.js"
+    ".eslintrc.js",
+    "lint-staged.config.js"
   ]
 }
